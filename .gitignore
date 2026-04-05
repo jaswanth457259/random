@@ -1,4 +1,5 @@
 node_modules
 dist
 .env
+.run
 .DS_Store

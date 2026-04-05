@@ -1,41 +1,54 @@
-# Attendance Frontend
+# Attendance Management System
 
-A React + Vite frontend scaffold for the attendance system defined in the project contract.
+This repository now has a clean split between frontend and backend code.
 
-## What is included
+## Project structure
 
-- Authentication screens for `register` and `login`
-- Dashboard with session summary and API contract reminders
-- Students screen using `userId` and `classId`
-- Subjects screen using `subjectName` and `facultyId`
-- Attendance screen for single and bulk attendance entry
-- Reports screen for student-wise and class-wise attendance lookups
-- Shared API client wired to the backend endpoints
+```text
+random/
+  attendance-frontend/
+  attendance-backend/
+```
 
-## Standard variables used
+## Frontend
 
-- `username`
-- `studentId`
-- `subjectId`
-- `date`
-- `status`
+Location: `attendance-frontend`
 
-## API base URL
+- React + Vite application
+- Authentication UI
+- Students, subjects, attendance, and reports pages
+- Uses standardized variables such as `username`, `studentId`, `subjectId`, `date`, and `status`
 
-Create a `.env` file from `.env.example` and set:
+Frontend setup:
+
+```bash
+cd attendance-frontend
+npm install
+npm run dev
+```
+
+Frontend environment:
 
 ```env
 VITE_API_BASE_URL=http://localhost:8080
 ```
 
-## Run locally
+## Backend
+
+Location: `attendance-backend/attendance-management-system`
+
+- Spring Boot application
+- Maven project
+- Attendance and auth APIs
+
+Backend setup:
 
 ```bash
-npm install
-npm run dev
+cd attendance-backend/attendance-management-system
+mvn spring-boot:run
 ```
 
-## Backend endpoints expected
+## Backend endpoints expected by the frontend
 
 - `POST /api/auth/register`
 - `POST /api/auth/login`
