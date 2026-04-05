@@ -63,22 +63,6 @@ export default function AuthPage({ onAuthenticated }) {
 
   return (
     <div className="auth-shell">
-      <div className="hero-card">
-        <span className="hero-kicker">Frontend Starter</span>
-        <h1>Attendance system UI for your team contract</h1>
-        <p>
-          Every input and payload here follows the standardized names you shared:
-          `username`, `studentId`, `subjectId`, `date`, and `status`.
-        </p>
-
-        <div className="hero-grid">
-          <div className="hero-chip">JWT Login</div>
-          <div className="hero-chip">Bulk Attendance</div>
-          <div className="hero-chip">Reports</div>
-          <div className="hero-chip">React + Vite</div>
-        </div>
-      </div>
-
       <div className="auth-card">
         <div className="mode-switch">
           <button

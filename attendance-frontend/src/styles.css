@@ -68,8 +68,7 @@ button {
 
 .brand-block h1,
 .panel-header h2,
-.dashboard-card h3,
-.hero-card h1 {
+.dashboard-card h3 {
   margin: 0;
   font-size: clamp(1.6rem, 2vw, 2.3rem);
   line-height: 1.05;
@@ -77,7 +76,6 @@ button {
 
 .brand-kicker,
 .panel-kicker,
-.hero-kicker,
 .label {
   display: inline-block;
   margin-bottom: 0.4rem;
@@ -162,8 +160,7 @@ button {
 }
 
 .panel,
-.auth-card,
-.hero-card {
+.auth-card {
   border: 1px solid var(--line);
   border-radius: 1.75rem;
   background: var(--surface);
@@ -184,7 +181,6 @@ button {
 
 .panel-description,
 .dashboard-card p,
-.hero-card p,
 .feedback-text,
 code,
 pre {
@@ -388,42 +384,18 @@ th {
 
 .auth-shell {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-.hero-card,
-.auth-card {
-  padding: 2rem;
-}
-
-.hero-card {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background:
-    radial-gradient(circle at top left, rgba(27, 107, 103, 0.24), transparent 30%),
-    linear-gradient(135deg, rgba(255, 250, 242, 0.96), rgba(244, 237, 226, 0.88));
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
-  margin-top: 2rem;
-}
-
-.hero-chip {
-  padding: 1rem;
-  border-radius: 1.2rem;
-  background: rgba(255, 255, 255, 0.7);
-  border: 1px solid var(--line);
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .auth-card {
-  align-self: center;
+  padding: 2rem;
+}
+
+.auth-card {
+  width: min(100%, 760px);
 }
 
 .mode-switch {
@@ -454,8 +426,7 @@ th {
 }
 
 @media (max-width: 1080px) {
-  .app-frame,
-  .auth-shell {
+  .app-frame {
     grid-template-columns: 1fr;
   }
 
@@ -480,7 +451,6 @@ th {
   }
 
   .panel,
-  .hero-card,
   .auth-card {
     padding: 1.2rem;
     border-radius: 1.35rem;
